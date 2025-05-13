@@ -16,10 +16,11 @@ namespace desenvolvimento_backend.Models
         public string Placa { get; set; }
 
         [Required(ErrorMessage = "Informe o ano de fabricação")]
-        public int AnoFacricacao { get; set; }
+        public int AnoFabricacao { get; set; }
+        [Display(Name = "Ano de Fabricação")]
 
         [Required(ErrorMessage = "Informe o ano do modelo")]
         public int AnoModelo { get; set; }
-
+        [Display(Name = "Ano do Modelo")]
     }
 }
